@@ -14,14 +14,14 @@ cache:
     - ~/.npm
     - ~/.cache
 
-git:
-  submodules: true
-
 install:
   # use the new "ci" command for fastest installs on CI
   - npm ci
 
 before_script:
+  - cd keetjs
+  - npm install
+  - cd ..
   ## runs the 'start' script which
   ## boots our local app server on port 8888
   ## which cypress expects to be running
