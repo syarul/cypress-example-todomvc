@@ -14,6 +14,9 @@ cache:
     - ~/.npm
     - ~/.cache
 
+git:
+  submodules: true
+
 install:
   # use the new "ci" command for fastest installs on CI
   - npm ci
